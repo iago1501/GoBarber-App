@@ -69,7 +69,7 @@ const Dashboard: React.FC = () => {
           <ProvidersListTitle>Cabeleireiros</ProvidersListTitle>
         }
         renderItem={({ item: provider }) => (
-          <ProviderContainer onPress={() => {}}>
+          <ProviderContainer onPress={navigateToProfile}>
             <ProviderAvatar source={{ uri: provider.avatar_url }} />
             <ProviderInfo>
               <ProviderName>{provider.name}</ProviderName>
